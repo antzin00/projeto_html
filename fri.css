@@ -1,0 +1,45 @@
+@import url(AMI3.css);
+@import url(AMI2CSS);
+@import url(AMI2.css);
+@import url(mi1.css);
+@import url(mi2.css);
+@import url(pi1.css);
+@import url(pi2.css);
+@import url(tu2.css);
+@import url(tu3.css);
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --text: #EDF1F7;
+    --red: #C51212;
+    --blue: #0041C2;
+    --green: #ffffff;
+    --yellow: #ffc12b;
+  }
+  
+  body, button, a {
+    color: var(--text);
+    font: 400 1rem "Mukta", sans-serif;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  button:hover {
+    cursor: pointer;
+  }
+  #app{
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 100%;
+height: 100%;
+
+
+  } 
