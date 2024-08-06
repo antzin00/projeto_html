@@ -129,7 +129,7 @@
 
 
 
-.book{
+.MARIO{
     background: #f9f9f9;
     padding: 50px;
 }
@@ -141,14 +141,14 @@
 .main-text h1 span{
     color: #1100ff;
 }
-.book .card{
+.MARIO .card{
     border-radius: 10px;
     box-shadow: 0px 5px 5px -6px black;
 }
-.book .row{
+.MARIO .row{
     margin-top: 30px;
 }
-.book form input{
+.MARIO form input{
     padding: 10px;
     color: black;
     border: none;
@@ -157,14 +157,14 @@
     border-radius: 10px;
     box-shadow: 0px 5px 5px -6px black;
 }
-.book form textarea{
+.MARIO form textarea{
     border: none;
     border-radius: 10px;
     resize: none;
     box-shadow: 0px 5px 5px -6px black;
     height: 200px;
 }
-.book .submit{
+.MARIO .submit{
     width: 160px;
     font-size: 16px;
     font-weight: 550;
@@ -173,7 +173,7 @@
     margin-top: 10px;
     transition: 0.5s;
 }
-.book .submit:hover{
+.MARIO .submit:hover{
     width: 170px;
 }
 @media (max-width:765px){
@@ -200,22 +200,22 @@
 .main-txt h1 span{
     color: #1100ff;
 }
-.packages .card{
+.PACOTES .card{
     border-radius: 5px;
     border: none;
     box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
 }
-.packages .card img{
+.PACOTES .card img{
     border-radius: 5px;
 }
-.packages .card .card-body{
+.PACOTES .card .card-body{
     background: transparent;
 }
-.packages .card .card-body h3{
+.PACOTES .card .card-body h3{
     font-size: 25px;
     font-weight: 600;
 }
-.packages .card .card-body p{
+.PACOTES .card .card-body p{
     font-size: 15px;
 }
 .checked{
@@ -224,10 +224,10 @@
 .star i{
     font-size: 15px;
 }
-.packages .card .card-body h6{
+.PACOTES .card .card-body h6{
     font-size: 20px;
 }
-.packages .card .card-body a{
+.PACOTES .card .card-body a{
     padding: 10px;
     text-decoration: none;
     background: #1100ff;
@@ -235,63 +235,63 @@
     border-radius: 5px;
 }
 
-.services{
+.SERVIÇOS{
     background: #f9f9f9;
     margin-top: 50px;
 }
-.services .card{
+.SERVIÇOS .card{
     box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
     border: none;
     cursor: pointer;
 }
-.services .card i{
+.SERVIÇOS .card i{
     font-size: 80px;
     text-align: center;
     color: #1100ff;
     margin-top: 20px;
 }
-.services .card .card-body h3{
+.SERVIÇOS .card .card-body h3{
     font-weight: 600;
 }
-.services .card .card-body{
+.SERVIÇOS .card .card-body{
     text-align: center;
 }
 
-.gallary{
+.GALERIA{
     margin-top: 50px;
 }
-.gallary .card{
+.GALERIA .card{
     border-radius: 10px;
     box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
     cursor: pointer;
 }
-.gallary .card img{
+.GALERIA .card img{
     border-radius: 10px;
     transition: 0.5s;
 }
-.gallary .card img:hover{
+.GALERIA .card img:hover{
     transform: scale(1.1);
 }
 
-.about{
+.SOBRE{
     padding: 50px;
     margin-top: 50px;
     background: #f9f9f9;
 }
-.about .card{
+.SOBRE .card{
     border-radius: 10px;
 }
-.about .card img{
+.SOBRE .card img{
     border-radius: 10px;
 }
-.about h2{
+.SOBRE h2{
     font-weight: 600;
     letter-spacing: 1px;
 }
-.about p{
+.SOBRE p{
     font-weight: 500;
 }
-#about-btn{
+#SOBRE-btn{
     width: 150px;
     height: 38px;
     border: none;
@@ -303,11 +303,11 @@
     transition: 0.5s ease;
     cursor: pointer;
 }
-#about-btn:hover{
+#SOBRE-btn:hover{
     width: 170px;
 }
 @media (max-width:765px){
-    .about{
+    .SOBRE{
         padding: 0;
     }
 }
