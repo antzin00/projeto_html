@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicios_Marião</title>
+    <style>
+        body {
+            background-color: rgb(55, 0, 255);
+            color: white;
+            font-family: 'Franklin Gothic Medium';
+        }
+        h1 {
+            color: #ffffff;
+        }
+        label, input, button, select, p {
+            color: white;
+        }
+        button {
+            background-color: #444;
+            color: rgb(255, 255, 255);
+            border: 1px solid #ffffff;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #c90000;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-between;
+        }
+
+        input[type="number"], input[type="text"], select {
+            background-color: #333;
+            border: 1px solid #777;
+
+        }
+    </style>
+</head>
+
+<body>
+
+   <!-- 1°) Desenvolva um programa que leia N números inteiros informados pelo usuário e mostre:
+    · A soma de todos os números.
+    · A média aritmética dos números.
+    · Quantos números são pares e quantos são ímpares. -->
+
+    <h1>Questão 1 (a Maioria fiz com o JAPA e o VILELA )</h1>
+    <!DOCTYPE html>
+<html>
+<head>
+    <title>Analisador de Números</title>
+</head>
+<body>
+    <label for="numElementos">Digite a quantidade de números:</label>
+    <input type="number" id="numElementos">
+    <button onclick="calcular()">Calcular</button>
+    <p id="resultado"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>
+ <script>
+    function calcular() {
+        const numElementos = parseInt(document.getElementById("numElementos").value);
+        let soma = 0;
+        let pares = 0;
+        let impares = 0;
+    
+        for (let i = 0; i < numElementos; i++) {
+            const numero = parseInt(prompt("Digite o número " + (i+1) + ":"));
+            soma += numero;
+            if (numero % 2 === 0) {
+                pares++;
+            } else {
+                impares++;
+            }
+        }
+    
+        const media = soma / numElementos;
+    
+        document.getElementById("resultado").textContent = `
+            A soma dos números é: ${soma}
+            A média aritmética é: ${media.toFixed(2)}
+            Quantidade de números pares: ${pares}
+            Quantidade de números ímpares: ${impares}
+        `;
+    }
+</script>
+
+    <!-- 2°) Desenvolva uma página que leia uma temperatura e converta a ela para os graus Fahrenheit ou Celsius. -->
+
+    <script src="ex2.js"></script>
+    <br><br><br>
+    <h1>Questão 2</h1>
+
+    <form action="" method="post">
+        <label for="">Selecione temperatura</label>
+        <select name="Temperatura" id="temperatura">
+            <option value="selecione">Selecione</option>
+            <option value="celsius">Celsius</option>
+            <option value="fahrenheit">Fahrenheit</option>
+        </select>
+        <br><br>
+        <label for="">Digite a temperatura</label>
+        <input type="text" name="" id="valor">
+        <br><br>
+        <input type="button" value="Calcular" onclick="calcTemp()" name="" id="">
+    </form>
+    <h3 id="resultado2"><b></b></h3>
+
+    <script>
+        function calcTemp() {
+    let temperatura = document.getElementById('temperatura').value;
+    let valor = parseFloat(document.getElementById('valor').value);
+    let resultado = document.getElementById('resultado2');
+    if (temperatura === 'celsius') {
+        let fahrenheit = (valor * 9 / 5) + 32;
+        resultado.innerHTML = ${valor}°C é igual a ${fahrenheit.toFixed(2)}°F;
+    }
+    else if (temperatura === 'fahrenheit') {
+        let celsius = (valor - 32) * 5 / 9;
+        resultado.innerHTML = ${valor}°F é igual a ${celsius.toFixed(2)}°C;
+    } else {
+        resultado.innerHTML = "Por favor, selecione uma escala";
+    }
+}
+
+    </script>
+
+    <!-- 3°) (fiz com o Japa)Crie uma página que leia um vetor de 10 números inteiros fornecidos pelo usuário e exiba:
+    · Todos os números que são maiores que a média dos valores inseridos.
+    · O número de elementos menores que zero -->()
+    
+    <br><br><br>
+    <h1>Questão 3</h1>
+    
+    <label for="n1">Digite o primeiro número</label>
+    <input type="number" id="n1">
+    <br><br>
+
+    <label for="n2">Digite o segundo número</label>
+    <input type="number" id="n2">
+    <br><br>
+
+    <label for="n3">Digite o terceiro número</label>
+    <input type="number" id="n3">
+    <br><br>
+
+    <label for="n4">Digite o quarto número</label>
+    <input type="number" id="n4">
+    <br><br>
+
+    <label for="n5">Digite o quinto número</label>
+    <input type="number" id="n5">
+    <br><br>
+
+    <label for="n6">Digite o sexto número</label>
+    <input type="number" id="n6">
+    <br><br>
+
+    <label for="n7">Digite o sétimo número</label>
+    <input type="number" id="n7">
+    <br><br>
+
+    <label for="n8">Digite o oitavo número</label>
+    <input type="number" id="n8">
+    <br><br>
+
+    <label for="n9">Digite o nono número</label>
+    <input type="number" id="n9">
+    <br><br>
+
+    <label for="n10">Digite o décimo número</label>
+    <input type="number" id="n10">
+    <br><br>
+
+    <button onclick="exercicio3()"> Calcular </button>
+    <p id="resultado3"></p>
+
+    <script>
+        function exercicio3(){
+            let numeros = [
+            parseInt(document.getElementById('n1').value),
+            parseInt(document.getElementById('n2').value),
+            parseInt(document.getElementById('n3').value),
+            parseInt(document.getElementById('n4').value),
+            parseInt(document.getElementById('n5').value),
+            parseInt(document.getElementById('n6').value),
+            parseInt(document.getElementById('n7').value),
+            parseInt(document.getElementById('n8').value),
+            parseInt(document.getElementById('n9').value),
+            parseInt(document.getElementById('n10').value)
+        ];
+            let soma = numeros.reduce((acc, val) => acc + val, 0);
+            let media = soma / 10
+
+            let maiormedia = numeros.filter(num => num > media);
+            let menorzero = numeros.filter(num => num < 0).length;
+
+            document.getElementById('resultado3').innerHTML = `
+            Soma dos números: ${soma} <br>
+            Média dos números: ${media} <br>
+            Números maiores que a média: ${maiormedia.join(", ")} <br>
+            Quantidade de números menores que zero: ${menorzero}`;
+        }
+    </script>
+
+    <!-- 4°) Desenvolva uma página que leia a quilometragem percorrida por um determinado veículo e o valor do combustível. Calcule o gasto dele, sabendo que o veículo percorre 8km/litro. -->
+     <br><br><br>
+     <h1>Questão 4</h1>
+        <label for="km">Digite a quilometragem percorrida (km)</label>
+        <input type="number" id="km">
+        <br><br>
+        <label for="combustivel">Digite o valor do combustível (R$)</label>
+        <input type="number" id="combustivel">
+        <br><br>
+        <button onclick="exercicio4()"> Calcular </button>
+        <p id="resultado4"></p>
+     
+
+     <script>
+        function exercicio4(){
+            let km =  parseFloat(document.getElementById('km').value);
+            let combustivel = parseFloat(document.getElementById('combustivel').value);
+            let gasto = (km / 8 ) * combustivel;
+            document.getElementById('resultado4').innerHTML = Gasto de combustível: R$ ${gasto.toFixed(2)};
+        }
+     </script>
+
+<!-- 5°) Desenvolva uma página para calcular o custo para assentar piso, sabendo que o preço é de 36,00 por m². O programa deve ler o comprimento e a largura total do cômodo. -->
+     <br><br><br>
+     <h1>Questão 5</h1>
+        <label for="comprimento">Digite o comprimento do cômodo</label>
+        <input type="number" id="comprimento">
+        <br><br>
+        <label for="largura">Digite a largura do cômodo</label>
+        <input type="number" id="largura">
+        <br><br>
+        <button onclick="exercicio5()">Calcular</button>
+        <p id="resultado5"></p>
+
+        <script>
+            function exercicio5(){
+                let comprimento = parseFloat(document.getElementById('comprimento').value);
+                let largura = parseFloat(document.getElementById('largura').value);
+                let total = comprimento * largura;
+                let custo = 36 * total;
+                document.getElementById('resultado5').innerHTML = Gasto de assentamento do piso de ${custo.toFixed(2)};
+            }
+        </script>
+
+<!-- 6°) Desenvolva um programa em JavaScript que calcule a força resultante em um objeto sob a ação de duas forças em direções opostas -->
+<br><br><br>
+<h1>Questão 6</h1>
+
+<label for="m1">Massa do objeto 1 (kg)</label>
+<input type="text" id="m1">
+<br><br>
+
+<label for="m2">Massa do objeto 2 (kg)</label>
+<input type="text" id="m2">
+<br><br>
+
+<label for="a1">Aceleração aplicada no objeto 1 (m/s²)</label>
+<input type="text" id="a1">
+<br><br>
+
+<label for="a2">Aceleração aplicada no objeto 2 (m/s²)</label>
+<input type="text" id="a2">
+<br><br>
+
+<button onclick="exercicio6()">Calcular</button>
+<p id="resultado6"></p>
+
+<script>
+    function exercicio6(){
+
+        let m1 = parseFloat(document.getElementById('m1').value);
+        let m2 = parseFloat(document.getElementById('m2').value);
+        let a1 = parseFloat(document.getElementById('a1').value);
+        let a2 = parseFloat(document.getElementById('a2').value);
+
+
+        let forcresul = m1 * (a1 - a2);
+
+  
+        let forcacao = m1 * a1;
+        let forcreacao = m2 * a2;
+
+        document.getElementById('resultado6').innerHTML = `
+            Força resultante: ${forcresul} N <br>
+            Força de ação: ${forcacao} N (mesma magnitude, sentidos opostos) `;
+    }
+</script>
+
+
+<!-- 7°) (fiz co o japa) Desenvolva um programa que ajude a determinar a predominância de metal ou ametal em uma liga. O usuário deve informar as porcentagens de metal e ametal. O programa deve verificar se a soma dessas porcentagens é igual a 100% e, em seguida, informar se a liga é predominantemente metálica ou predominantemente ametálica.
+·Exemplo de entrada: Percentual de metal = 60%, Percentual de ametal = 40%
+· Exemplo de saída: "A liga é predominantemente metálica." -->
+
+<br><br><br>
+
+<h1>Questão 7</h1>
+
+<label for="metal">Digite a porcentagem de metal</label>
+<input type="text" id="metal">
+
+<br><br>
+
+<label for="ametal">Digite a porcentagem de ametal</label>
+<input type="text" id="ametal">
+
+<br><br>
+
+<button onclick="exercicio7()">Calcular</button>
+<p id="resultado7"></p>
+
+<script>
+    function exercicio7(){
+        let metal = parseFloat(document.getElementById('metal').value)
+        let ametal = parseFloat(document.getElementById('ametal').value)
+
+        if (ametal+metal !== 100) {
+            document.getElementById('resultado7').innerHTML='A soma das porcentagens deve ser 100%'
+        } else if (ametal>50) {
+            document.getElementById('resultado7').innerHTML='A liga predominante é ametálica'
+        } else if (metal>50){
+            document.getElementById('resultado7').innerHTML='A liga predominante é metálica'
+        } else if (ametal === 50 && metal === 50) {
+            document.getElementById('resultado7').innerHTML='Está igualado as porcentagens de ametal e metal'
+    }
+    }
+</script>
+
+<!-- 8°) Cálculo de Proporções em Ligações Químicas (Iônicas e Covalentes). Desenvolva um programa em JavaScript que ajude os alunos a calcular as proporções de átomos em uma ligação química iônica e covalente -->
+ 
+<br><br><br>
+
+<h1>Questão 8 - ligação covalente não consegui fazer!</h1>
+<h3>Ligações Iônicas</h3>
+
+<label for="eletronsp">Elétrons perdidos pelo metal</label>
+<input type="text" id="eletronsp">
+
+<br><br>
+
+<label for="eletronsg">Elétrons ganhos pelo metal</label>
+<input type="text" id="eletronsg">
+
+<br><br>
+
+<button onclick="exercicio8()">Calcular</button>
+<p id="resultado8"></p>
+
+<script>
+    function exercicio8(){
+        let eletronsp = document.getElementById('eletronsp').value;
+        let eletronsg = document.getElementById('eletronsg').value;
+        document.getElementById('resultado8').innerHTML = Fórmula iônica: ${eletronsp}:${eletronsg}
+    }
+</script>
+
+<!-- 9-) Crie uma página que receba N valores do usuário. Crie botões para mostrar todos os valores inseridos, o maior valor e o menor valor do vetor. -->
+ <br><br><br>
+<h1>Questão 9</h1>
+
+<label for="valores">Digite um valor:</label>
+<input type="number" id="valores" step="any">
+<button onclick="adicionarValor()">Adicionar</button>
+
+<h2>Valores Inseridos:</h2>
+<ul id="listaValores"></ul>
+
+<button onclick="mostrarTodosValores()">Mostrar Todos os Valores</button>
+<button onclick="mostrarMaiorValor()">Mostrar Maior Valor</button>
+<button onclick="mostrarMenorValor()">Mostrar Menor Valor</button>
+
+<p id="resultado9"></p>
+
+<script>
+    let valores = [];
+
+    function adicionarValor() {
+        const valorInput = document.getElementById('valores').value;
+        const valor = parseFloat(valorInput);
+
+        if (!isNaN(valor)) {
+            valores.push(valor);
+            document.getElementById('valores').value = ''; 
+            mostrarTodosValores(); 
+        } else {
+            alert("Por favor, insira um número válido.");
+        }
+    }
+
+    function mostrarTodosValores() {
+        const lista = document.getElementById('listaValores');
+        lista.innerHTML = ''; 
+
+        if (valores.length === 0) {
+            lista.innerHTML = '<li>Nenhum valor inserido.</li>';
+            return;
+        }
+
+        valores.forEach((valor, index) => {
+            const li = document.createElement('li');
+            li.textContent = Valor ${index + 1}: ${valor};
+            lista.appendChild(li);
+        });
+    }
+
+    function mostrarMaiorValor() {
+        if (valores.length === 0) {
+            document.getElementById('resultado9').textContent = 'Nenhum valor inserido.';
+            return;
+        }
+
+        const maiorValor = Math.max(...valores);
+        document.getElementById('resultado9').textContent = Maior valor: ${maiorValor};
+    }
+
+    function mostrarMenorValor() {
+        if (valores.length === 0) {
+            document.getElementById('resultado9').textContent = 'Nenhum valor inserido.';
+            return;
+        }
+
+        const menorValor = Math.min(...valores);
+        document.getElementById('resultado9').textContent = Menor valor: ${menorValor};
+    }
+</script>
+
+<!-- 10-) Implemente uma função exponencial que calcule o valor de uma função f(x)=ex, onde x é informado pelo usuário. Mostre o valor calculado da função exponencial para diferentes valores de xxx. -->
+ <br><br><br>
+ <h1>Questão 10</h1>
+
+ <label for="valorX">Digite o valor de x:</label>
+    <input type="number" id="valorX" step="any">
+    <button onclick="calcularExponencial()">Calcular e^x</button>
+
+    <h2>Resultados:</h2>
+    <p id="resultado10"></p>
+
+    <script>
+        function calcularExponencial() {
+            const x = parseFloat(document.getElementById('valorX').value);
+            
+            if (isNaN(x)) {
+                alert("Por favor, insira um número válido.");
+                return;
+            }
+
+            let resultados = ""; 
+
+ 
+            for (let i = 0; i <= 3; i++) {
+                const valor = x + i; 
+                const resultado = Math.exp(valor); 
+                resultados += e<sup>${valor}</sup> = ${resultado.toFixed(4)}<br>; 
+            }
+
+     
+            document.getElementById('resultado10').innerHTML = resultados;
+        }
+    </script>
+
+    <!-- 11°) Desenvolva um programa que ajude a determinar a predominância de metal ou ametal em uma liga. O usuário deve informar as porcentagens de metal e ametal. O programa deve verificar se a soma dessas porcentagens é igual a 100% e, em seguida, informar se a liga é predominantemente metálica ou predominantemente ametálica.
+·Exemplo de entrada: Percentual de metal = 60%, Percentual de ametal = 40%
+· Exemplo de saída: "A liga é predominantemente metálica." -->
+
+<br><br><br>
+
+<h1>Questão 11 - Repetida</h1>
+
+<label for="metal11">Digite a porcentagem de metal</label>
+<input type="text" id="metal11">
+
+<br><br>
+
+<label for="ametal11">Digite a porcentagem de ametal</label>
+<input type="text" id="ametal11">
+
+<br><br>
+
+<button onclick="exercicio11()">Calcular</button>
+<p id="resultado11"></p>
+
+<script>
+    function exercicio11(){
+        let metal11 = parseFloat(document.getElementById('metal11').value)
+        let ametal11 = parseFloat(document.getElementById('ametal11').value)
+
+        if (ametal11+metal11 !== 100) {
+            document.getElementById('resultado11').innerHTML='A soma das porcentagens deve ser 100%'
+        } else if (ametal11>50) {
+            document.getElementById('resultado11').innerHTML='A liga predominante é ametálica'
+        } else if (metal11>50){
+            document.getElementById('resultado11').innerHTML='A liga predominante é metálica'
+        } else if (ametal11 === 50 && metal11 === 50) {
+            document.getElementById('resultado11').innerHTML='Está igualado as porcentagens de ametal e metal'
+    }
+    }
+</script>
+</body>
+
+</html>
