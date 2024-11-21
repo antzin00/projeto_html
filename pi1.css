@@ -144,17 +144,25 @@ header img {
 }
 
 .containerproje .slide-container:nth-child(1) .slide {
-    background: url('telAS.png') no-repeat center center / cover;
+    background: url('WhatsApp\ Image\ 2024-11-20\ at\ 23.43.59.jpeg') no-repeat center center / cover;
 }
 
 .containerproje .slide-container:nth-child(2) .slide {
-    background: url('TELA1.jpeg') no-repeat center center / cover;
+    background: url('WhatsApp\ Image\ 2024-11-20\ at\ 23.44.16.jpeg') no-repeat center center / cover;
 }
 
 .containerproje .slide-container:nth-child(3) .slide {
-    background: url('Captura\ de\ tela\ 2024-06-21\ 224612.png') no-repeat center center / cover;
+    background: url('WhatsApp\ Image\ 2024-11-20\ at\ 23.44.32.jpeg') no-repeat center center / cover;
 }
-
+.containerproje .slide-container:nth-child(4) .slide {
+    background: url('WhatsApp\ Image\ 2024-11-20\ at\ 23.45.41.jpeg') no-repeat center center / cover;
+}
+.containerproje .slide-container:nth-child(5) .slide {
+    background: url('WhatsApp\ Image\ 2024-11-20\ at\ 23.46.11.jpeg') no-repeat center center / cover;
+}
+.containerproje .slide-container:nth-child(6) .slide {
+    background: url('WhatsApp\ Image\ 2024-11-20\ at\ 23.46.26.jpeg') no-repeat center center / cover;
+}
 .containerproje #prev, 
 .containerproje #next {
     position: absolute;
