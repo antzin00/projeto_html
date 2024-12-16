@@ -1,342 +1,129 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
-    scroll-behavior: smooth;
-    font-family: 'Lato', sans-serif;
-}
-
-#navbar{
-    background: #f9f9f9;
-}
-#logo{
-    font-size: 36px;
-    font-weight: 550;
-    color: black;
-    text-shadow: 0px 1px 1px black;
-    margin-bottom: 5px;
-}
-#logo span{
-    color: #1100ff;
-}
-.navbar-toggler span{
-    color: #1100ff;
-}
-.navbar-nav{
-    margin-left: 20px;
-}
-.nav-item .nav-link{
-    font-size: 16px;
-    font-weight: 550;
-    color: black;
-    letter-spacing: 1px;
-    border-radius: 3px;
-    transition: 0.5s ease;
-}
-.nav-item .nav-link:hover{
-    background: #1100ff;
-    color: white;
-}
-#navbar form button{
-    background: #1100ff;
-    color: white;
-    border: none;
-}
-
-.inicio{
-    width: 100%;
-    height: 90vh;
-    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)), url(19474852727174223.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.inicio .content{
-    text-align: center;
-    padding-top: 200px;
-}
-.inicio .content h5{
-    color: white;
-    font-size: 38px;
-    font-weight: 550;
-    text-shadow: 0px 1px 1px black;
-}
-.inicio .content h1{
-    color: white;
-    font-size: 70px;
-    font-weight: 550;
-    text-shadow: 0px 1px 1px black;
-    margin-top: 5px;
-}
-.changecontent::after{
-    content: ' ';
-    color: #000000;
-    text-shadow: 0px 1px 1px black;
-    animation: changetext 10s infinite linear;
-}
-@keyframes changetext{
-    0%{content: "PIRAPORA DO BOM JESUS";}
-    10%{content: "SANTANA DE PARNAIBA";}
-    20%{content: "SÃO PAULO";}
-    30%{content: "COTIA";}
-    40%{content: "OSASCO";}
-    50%{content: "ITAPEVI";}
-    60%{content: "ARAÇARIGUAMA";}
-    70%{content: "BAHIA";}
-    80%{content: " BARUERI";}
-    90%{content: "CAJAMAR";}
-    100%{content: "PRAIA GRANDE";}
-} 
-.inicio .content p{
-    color: white;
-    font-size: 15px;
-    font-weight: 600;
-    text-shadow: 0px 1px 1px #1100ff;
-    margin-bottom: 30px;
-    margin-top: 5px;
-}
-.inicio .content a{
-    padding: 10px;
-    background: white;
-    color: black;
-    letter-spacing: 2px;
-    font-weight: 550;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: 0.5s;
-}
-.inicio .content a:hover{
-    background: #000000;
-    color: white;
-}
-@media (max-width:850px){
-    .home{
-        background-position: 50%;
-    }
-}
-@media (max-width:450px){
-    .home .content h5{
-        font-size: 25px;
-    }
-    .home .content h1{
-        font-size: 38px;
-    }
-    .home .content p{
-        font-size: 13px;
-    }
-}
-
-
-
-.MARIO{
-    background: #f9f9f9;
-    padding: 50px;
-}
-.main-text h1{
-    text-align: center;
-    text-shadow: 0px 1px 1px black;
-    font-weight: 600;
-}
-.main-text h1 span{
-    color: #1100ff;
-}
-.MARIO .card{
-    border-radius: 10px;
-    box-shadow: 0px 5px 5px -6px black;
-}
-.MARIO .row{
-    margin-top: 30px;
-}
-.MARIO form input{
-    padding: 10px;
-    color: black;
-    border: none;
+/* customizable snowflake styling */
+.loader button {
+    width: 50%;
+    height: 100px;
+    position: fixed;
+    left: 50%;
+    top: 45%;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+    background: center no-repeat #fff;
+    z-index: 9999999999999999999999;
+    font-size: 50px;
     outline: none;
-    font-size: 15px;
-    border-radius: 10px;
-    box-shadow: 0px 5px 5px -6px black;
-}
-.MARIO form textarea{
+    box-sizing: border-box;
     border: none;
-    border-radius: 10px;
-    resize: none;
-    box-shadow: 0px 5px 5px -6px black;
-    height: 200px;
-}
-.MARIO .submit{
-    width: 160px;
-    font-size: 16px;
-    font-weight: 550;
-    background: #1100ff;
-    color: white;
-    margin-top: 10px;
-    transition: 0.5s;
-}
-.MARIO .submit:hover{
-    width: 170px;
-}
-@media (max-width:765px){
-    .book{
-        padding: 0;
-    }
-    .main-text h1{
-        padding: 20px;
-    }
-}
-
-
-
-
-
-
-
-.main-txt h1{
-    text-align: center;
-    margin-top: 30px;
-    font-weight: 600;
-    text-shadow: 0px 1px 1px black;
-}
-.main-txt h1 span{
-    color: #1100ff;
-}
-.PACOTES .card{
-    border-radius: 5px;
-    border: none;
-    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
-}
-.PACOTES .card img{
-    border-radius: 5px;
-}
-.PACOTES .card .card-body{
-    background: transparent;
-}
-.PACOTES .card .card-body h3{
-    font-size: 25px;
-    font-weight: 600;
-}
-.PACOTES .card .card-body p{
-    font-size: 15px;
-}
-.checked{
-    color: #1100ff;
-}
-.star i{
-    font-size: 15px;
-}
-.PACOTES .card .card-body h6{
-    font-size: 20px;
-}
-.PACOTES .card .card-body a{
-    padding: 10px;
-    text-decoration: none;
-    background: #1100ff;
-    color: white;
-    border-radius: 5px;
-}
-
-.SERVIÇOS{
-    background: #f9f9f9;
-    margin-top: 50px;
-}
-.SERVIÇOS .card{
-    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
-    border: none;
+    border-radius: .3em;
+    text-transform: uppercase;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .16), 0 3px 6px rgba(110, 80, 20, .4),
+        inset 0 -2px 5px 1px rgba(139, 66, 8, 1),
+        inset 0 -1px 1px 3px rgba(250, 227, 133, 1);
+    background-image: linear-gradient(160deg, #a54e07, #b47e11, #fef1a2, #bc881b, #a54e07);
+    border: 1px solid #a55d07;
+    color: rgb(120, 50, 5);
+    text-shadow: 0 2px 2px rgba(250, 227, 133, 1);
     cursor: pointer;
-}
-.SERVIÇOS .card i{
-    font-size: 80px;
-    text-align: center;
-    color: #1100ff;
-    margin-top: 20px;
-}
-.SERVIÇOS .card .card-body h3{
-    font-weight: 600;
-}
-.SERVIÇOS .card .card-body{
-    text-align: center;
+    transition: all .2s ease-in-out;
+    background-size: 100% 100%;
+    background-position: center;
 }
 
-.GALERIA{
-    margin-top: 50px;
-}
-.GALERIA .card{
-    border-radius: 10px;
-    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
-    cursor: pointer;
-}
-.GALERIA .card img{
-    border-radius: 10px;
-    transition: 0.5s;
-}
-.GALERIA .card img:hover{
-    transform: scale(1.1);
+.golden-btn:focus,
+.golden-btn:hover {
+    background-size: 150% 150%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23),
+        inset 0 -2px 5px 1px #b17d10,
+        inset 0 -1px 1px 3px rgba(250, 227, 133, 1);
+    border: 1px solid rgba(165, 93, 7, .6);
+    color: rgba(120, 50, 5, .8);
 }
 
-.SOBRE{
-    padding: 50px;
-    margin-top: 50px;
-    background: #f9f9f9;
-}
-.SOBRE .card{
-    border-radius: 10px;
-}
-.SOBRE .card img{
-    border-radius: 10px;
-}
-.SOBRE h2{
-    font-weight: 600;
-    letter-spacing: 1px;
-}
-.SOBRE p{
-    font-weight: 500;
-}
-#SOBRE-btn{
-    width: 150px;
-    height: 38px;
-    border: none;
-    border-radius: 5px;
-    background: #1100ff;
-    color: white;
-    letter-spacing: 2px;
-    font-weight: 550;
-    transition: 0.5s ease;
-    cursor: pointer;
-}
-#SOBRE-btn:hover{
-    width: 170px;
-}
-@media (max-width:765px){
-    .SOBRE{
-        padding: 0;
-    }
+.golden-btn:active {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .16), 0 3px 6px rgba(110, 80, 20, .4),
+        inset 0 -2px 5px 1px #b17d10,
+        inset 0 -1px 1px 3px rgba(250, 227, 133, 1);
 }
 
-#footer{
+.loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
     width: 100%;
-    margin-top: 150px;
+    height: 100%;
+    z-index: 999;
+    background: url(img/back.png) center no-repeat #000;
+}
+
+.song {
+    display: none;
+}
+
+body {
+    background-color: #FFDAB9;
+}
+
+img {
+    width: 100%;
+}
+
+.balloon-border {
+    position: fixed;
+    top: 100%;
+    opacity: 0.5;
+    z-index: 99999999;
+}
+
+.area {
     text-align: center;
-    background: #f9f9f9;
+    font-size: 70px;
+    color: #C4515C;
+    letter-spacing: -7px;
+    font-weight: 700;
+    text-transform: uppercase;
+    animation: spin 2s ease-out infinite;
+    text-shadow: 0px 0px 5px #fff, 0px 0px 7px #fff;
 }
-#footer h1{
-    font-weight: 600;
-    padding-top: 30px;
-    text-shadow: 0px 0px 1px black;
+
+#nae {
+    text-transform: capitalize;
 }
-#footer h1 span{
-    color: #1100ff;
+
+#confetti {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
 }
-.social-links i{
-    padding: 10px;
-    border-radius: 5px;
-    font-size: 20px;
-    background: black;
-    color: white;
-    margin-left: 10px;
-    margin-bottom: 10px;
-    transition: 0.5s ease;
-    cursor: pointer;
+
+@keyframes spin {
+    0% {
+        transform: rotateZ(0);
+    }
+
+    25% {
+        transform: rotateZ(10deg);
+    }
+
+    50% {
+        transform: rotateZ(0deg);
+    }
+
+    75% {
+        transform: rotateZ(-10deg);
+    }
 }
-.social-links i:hover{
-    background: #1100ff;
+
+.type-wrap {
+    font-size: 25px;
+    color: #C4515C;
+
+}
+
+.cake {
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+    left: 50%;
+    position: absolute;
+    padding-top: 250px;
 }

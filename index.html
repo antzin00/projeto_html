@@ -1,505 +1,60 @@
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Happy Birthday</title>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MARIOAIRLINES</title>
-
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
-
-   
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    
-
-
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-  
-
-
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
-    
 </head>
+
 <body>
-    
-
-
-
-
-
-    
-    <nav class="navbar navbar-expand-lg" id="navbar">
-        <div class="container">
-          <a class="navbar-brand" href="index.html" id="logo"><span>M</span>ARIO AIRLINES</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
-            <span><i class="fa-solid fa-bars"></i></span>
-          </button>
-          <div class="collapse navbar-collapse" id="mynavbar">
-            <ul class="navbar-nav me-auto">
-              <li class="nav-item">
-                <a class="nav-link active" href="index.html">INICIO</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#book">VIAGEM</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#packages">PACOTES</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#services">SERVIÇOS</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#gallary">GALERIA</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#about">SOBRE</a>
-              </li>
-             
-            </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="text" placeholder="Search">
-              <button class="btn btn-primary" type="button">Search</button>
-            </form>
-          </div>
-        </div>
-      </nav>
-    
-
-
-
-
-
-    
-    <div class="inicio">
-        <div class="content">
-            <h5>BEM VINDO A MARIO AIRLINES </h5>
-            <h1>VISITE <span class="changecontent"></span></h1>
-            <p>ALUNO NÃO PAGA, MAS TAMBÉM NÃO VOA HAHAHA</p>
-            <a href="#book">RESERVE AGORA</a>
+    <div class="container">
+        <div class="row">
+            <div class="loader">
+                <button id="play">Começar</button>
+            </div>
         </div>
     </div>
-    
+    <audio class="song" controls loop>
+        <source src="music.mp3">
+        </source>
+    </audio>
+    <canvas id="confetti"></canvas>
+    <div class="main">
+        <div class="container pt-5">
+            <div class="row">
 
-
-
-
-
-    
-    <section class="MARIO" id="MARIO">
-      <div class="container">
-
-        <div class="main-text">
-          <h1><span>R</span>ESERVE</h1>
-        </div>
-        
-        <div class="row">
-
-          <div class="col-md-6 py-3 py-md-0">
-            <div class="card">
-              <img src="1-92433223-cancun.jpg" alt="">
-            </div>
-          </div>
-
-          <div class="col-md-6 py-3 py-md-0">
-            <form action="#">
-
-              <input type="text" class="form-control" placeholder="PARA ONDE" required><br>
-              <input type="text" class="form-control" placeholder="QUANTO" required><br>
-              <input type="date" class="form-control" placeholder="CHEGADA" required><br>
-              <input type="date" class="form-control" placeholder="SAIDA" required><br>
-              <textarea class="form-control" rows="5" name="text" placeholder="COLOQUE SEU NOME & DETALHES"></textarea>
-
-
-            </form>
-          </div>
-
-        </div>
-      </div>
-    </section>
-    
-
-
-
-
-
-
-
-
-    
-    <section class="PACOTES" id="PACOTES">
-      <div class="container">
-        
-        <div class="main-txt">
-          <h1><span>P</span>ACOTES</h1>
-        </div>
-
-        <div class="row" style="margin-top: 30px;">
-
-          <div class="col-md-4 py-3 py-md-0">
-
-            <div class="card">
-              <img src="images.jfif" alt="">
-              <div class="card-body">
-                <h3>OSASCO</h3>
-                <p>SÓ TEM CACHORRO QUENTE</p>
-                <div class="star">
-                  <i class="fa-solid fa-star checked"></i>
-                  <i class="fa-solid fa-star checked"></i>
-                  <i class="fa-solid fa-star checked"></i>
-                  <i class="fa-solid fa-star "></i>
-                  <i class="fa-solid fa-star "></i>
+                <div class="col-12 col-xl-6 mx-auto">
+                    <img src="img/banner.png" alt="">
                 </div>
-                <h6>PREÇO: <strong>R$4000</strong></h6>
-                <a href="#book">RESERVE</a>
-              </div>
-            </div>
 
-          </div>
-          <div class="col-md-4 py-3 py-md-0">
-
-            <div class="card">
-              <img src="image-2000-9ad5197caf65a3fb1ecc64842e1ad27d.jpeg" alt="">
-              <div class="card-body">
-                <h3>SÃO PAULO</h3>
-                <p></p>
-                <div class="star">
-                  <i class="fa-solid fa-star checked"></i>
-                  <i class="fa-solid fa-star checked"></i>
-                  <i class="fa-solid fa-star checked"></i>
-                  <i class="fa-solid fa-star "></i>
-                  <i class="fa-solid fa-star "></i>
+                <div class="col-12  text-center">
+                    <div id="nome" class="area">Ana Luiza</div>
                 </div>
-                <h6>PREÇO: <strong>R$500</strong></h6>
-                <a href="#book">RESERVE</a>
-              </div>
-            </div>
 
-          </div>
-          <div class="col-md-4 py-3 py-md-0">
-
-            <div class="card">
-              <img src="centro-historico.jpg" alt="">
-              <div class="card-body">
-                <h3>SANTANA DE PARNAIBA</h3>
-                <p>ROMEIRO E ETEC </p>
-                <div class="star">
-                  <i class="fa-solid fa-star checked"></i>
-                  <i class="fa-solid fa-star checked"></i>
-                  <i class="fa-solid fa-star checked"></i>
-                  <i class="fa-solid fa-star "></i>
-                  <i class="fa-solid fa-star "></i>
+                <div class="col-12 text-center">
+                    <div class="type-wrap">
+                        <div id="typed-strings" class="typing">
+                            <h2>Feliz Aniversário <i id="nae">Ana</i></h2>
+                            <h2>Tenha um dia maravilhoso</h2>
+                            <h2>Cheio de alegria e felicidade.</h2>
+                        </div>
+                        <span id="typed" style="white-space:pre;"></span>
+                    </div>
                 </div>
-                <h6>PREÇO: <strong>R$500</strong></h6>
-                <a href="#book">RESERVE</a>
-              </div>
-            </div>
 
-          </div>
-
-
-
-        </div>
-
-
-
-        <div class="row" style="margin-top: 30px;">
-
-          <div class="col-md-4 py-3 py-md-0">
-
-            <div class="card">
-              <img src="PIRA.jpg" alt="">
-              <div class="card-body">
-                <h3>PIRAPORA</h3>
-                <p>COMECE A AMAR JESUS CRISTO</p>
-                <div class="star">
-                  <i class="fa-solid fa-star checked"></i>
-                  <i class="fa-solid fa-star checked"></i>
-                  <i class="fa-solid fa-star checked"></i>
-                  <i class="fa-solid fa-star "></i>
-                  <i class="fa-solid fa-star "></i>
+                <div class="col-12 col-xl-3 cake">
+                    <img src="img/cake.gif" alt="">
                 </div>
-                <h6>PREÇO: <strong>R$500</strong></h6>
-                <a href="#book">RESERVE</a>
-              </div>
             </div>
-
-          </div>
-          <div class="col-md-4 py-3 py-md-0">
-
-            <div class="card">
-              <img src="Centro_da_Cidade_de_Itapevi.jpg" alt="">
-              <div class="card-body">
-                <h3>ITAPEVI</h3>
-                <p>LUGAR ONDE RESIDE UM DOS MAIORES PROFESSORES DO PLANETA</p>
-                <div class="star">
-                  <i class="fa-solid fa-star checked"></i>
-                  <i class="fa-solid fa-star checked"></i>
-                  <i class="fa-solid fa-star checked"></i>
-                  <i class="fa-solid fa-star "></i>
-                  <i class="fa-solid fa-star "></i>
-                </div>
-                <h6>PREÇO: <strong>R$59.99</strong></h6>
-                <a href="#book">RESERVE</a>
-              </div>
-            </div>
-
-          </div>
-          <div class="col-md-4 py-3 py-md-0">
-
-            <div class="card">
-              <img src="75033aa7-4999-4b95-8f12-13ae328dc066.jpeg" alt="">
-              <div class="card-body">
-                <h3>CAJAMAR</h3>
-                <p>MINEIRO MORA LÁ</p>
-                <div class="star">
-                  <i class="fa-solid fa-star checked"></i>
-                  <i class="fa-solid fa-star checked"></i>
-                  <i class="fa-solid fa-star checked"></i>
-                  <i class="fa-solid fa-star "></i>
-                  <i class="fa-solid fa-star "></i>
-                </div>
-                <h6>PREÇO: <strong>R$50</strong></h6>
-                <a href="#book">RESERVE</a>
-              </div>
-            </div>
-
-          </div>
-
-
-
         </div>
-
-
-      </div>
-    </section>
-    
-
-
-
-
-
-
-
-    
-    <section class="SERVIÇOS" id="SERVIÇOS">
-      <div class="container">
-
-        <div class="main-txt">
-          <h1><span>S</span>ERVIÇOS</h1>
-        </div>
-
-        <div class="row" style="margin-top: 30px;">
-
-          <div class="col-md-4 py-3 py-md-0">
-
-            <div class="card">
-              <i class="fas fa-hotel"></i>
-              <div class="card-body">
-                <h3>CONFORTÁVEL HOTEL </h3>
-                <P>O hotel é tão desconfortável que, se você tentar relaxar na cama, provavelmente vai acabar no seu consultório ortopédico na semana seguinte. O travesseiro é tão mole que você fica mais confortável com a cabeça na parede!
-                </P>
-              </div>
-            </div>
-
-          </div>
-          <div class="col-md-4 py-3 py-md-0">
-
-            <div class="card">
-              <i class="fas fa-utensils"></i>
-              <div class="card-body">
-                <h3>COMIDA E BEBIA & BEBIDA</h3>
-                <p>A comida é tão ruim que até a comida do hospital parece gourmet comparada a isso. E a bebida? Bem, o bar deve ter sido fundado em um experimento de química, porque o que servem lá nem os cientistas sabem identificar</p>
-              </div>
-            </div>
-
-          </div>
-          <div class="col-md-4 py-3 py-md-0">
-
-            <div class="card">
-              <i class="fas fa-bullhorn"></i>
-              <div class="card-body">
-                <h3>GUIA TURISTICO</h3>
-                <p>NÃO CONSEGUE GUIAR NEM A PROPIA VIDA QUEM DIRA VOCE, SUPER RADICAL TE LEVANDO A LUGARES MARAVILHOSOS </p>
-              </div>
-            </div>
-
-          </div>
-
-
-
-        </div>
-
-
-        <div class="row" style="margin-top: 30px;">
-
-          <div class="col-md-4 py-3 py-md-0">
-
-            <div class="card">
-              <i class="fas fa-globe-asia"></i>
-              <div class="card-body">
-                <h3>AO REDOR DE SÃO PAULO</h3>
-                <p>AO REDOR DO MUNDO NÃO DA PQ A GASOLINA TÁ CARA </p>
-              </div>
-            </div>
-
-          </div>
-          <div class="col-md-4 py-3 py-md-0">
-
-            <div class="card">
-              <i class="fas fa-plane"></i>
-              <div class="card-body">
-                <h3> VIAGEM MAIS RÁPIDA</h3>
-                <p>USAMOS A MAIS NOVA TECNOLOGIA "HELITOTEROS" E NÃO HELICOPTEROS QUE POLUEM GRANDE PARTE DO MUNDO</p>
-              </div>
-            </div>
-
-          </div>
-          <div class="col-md-4 py-3 py-md-0">
-
-            <div class="card">
-              <i class="fas fa-hiking"></i>
-              <div class="card-body">
-                <h3>AVENTURAS</h3>
-                <p>TEM MAIS PERRENGUE QUE AVENTURA, JÁ VAI SE PREPARANDO AMIGÃO</p>
-              </div>
-            </div>
-
-          </div>
-
-
-
-        </div>
-
-      </div>
-    </section>
-    
-
-
-
-
-    
-    <section class="GALERIA" id="GALERIA">
-      <div class="container">
-
-        <div class="main-txt">
-          <h1><span>G</span>ALERIA</h1>
-        </div>
-
-        <div class="row" style="margin-top: 30px;">
-          <div class="col-md-4 py-3 py-md-0">
-            <div class="card">
-              <img src="primeiro-a-nave-depois-a-casa-meme-land-rover-range-rover-evoque-1598649837057_v2_1170x540.png" alt="" height="230px">
-            </div>
-          </div>
-          <div class="col-md-4 py-3 py-md-0">
-            <div class="card">
-              <img src="images (3).jfif" alt="" height="230px">
-            </div>
-          </div>
-          <div class="col-md-4 py-3 py-md-0">
-            <div class="card">
-              <img src="images (2).jfif" alt="" height="230px">
-            </div>
-          </div>
-        </div>
-
-
-        <div class="row" style="margin-top: 30px;">
-          <div class="col-md-4 py-3 py-md-0">
-            <div class="card">
-              <img src="images (1).jfif" alt="" height="230px">
-            </div>
-          </div>
-          <div class="col-md-4 py-3 py-md-0">
-            <div class="card">
-              <img src="piscina-edilson-950.webp" alt="" height="230px">
-            </div>
-          </div>
-          <div class="col-md-4 py-3 py-md-0">
-            <div class="card">
-              <img src="MARIOOO.jpg" alt="" height="230px">
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-    
-
-
-
-
-
-
-
-    
-    <section class="SOBRE" id="SOBRE">
-      <div class="container">
-
-        <div class="main-txt">
-          <h1>SOBRE <span>NOS</span></h1>
-        </div>
-
-        <div class="row" style="margin-top: 50px;">
-
-          <div class="col-md-6 py-3 py-md-0">
-            <div class="card">
-              <img src="EGITO.jpg" alt="">
-            </div>
-          </div>
-
-          <div class="col-md-6 py-3 py-md-0">
-            <h2>UMA AGENCIA DE VIAGENS </h2>
-            <P>Bem-vindo à Mario Airlines, a agência de viagens que transforma sonhos em aventuras inesquecíveis! Desde voos exóticos até pacotes de férias únicos, garantimos que sua experiência de viagem seja tão emocionante quanto uma jornada pelo Reino dos Cogumelos. Nossos serviços são tão personalizados quanto um power-up, com atendimento ao cliente que é verdadeiramente de outro nível. E não se preocupe com os desafios do caminho – nossa equipe está aqui para garantir que sua jornada seja tranquila e repleta de surpresas agradáveis. Com a Mario Airlines, a diversão e a descoberta estão sempre a apenas um voo de distância!
-            </P>
-            <button id="SOBRE-btn">LEIA MAIS...</button>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-    
-
-
-
-
-
-
-
-
-    
-    <footer id="footer">
-      <h1><span>V</span>IAJAR</h1>
-      <p> </p>
-      <div class="social-links">
-        <i class="fa-brands fa-twitter"></i>
-        <i class="fa-brands fa-facebook"></i>
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-youtube"></i>
-        <i class="fa-brands fa-pinterest-p"></i>
-      </div>
-      <div class="credit">
-        <p>FEITO POR <a href="https://www.instagram.com/imcantzin00/">ESSE USUARIO AMA JESUS CRISTO</a></p>
-      </div>
-      
-      </div>
-    </footer>
-    
-
-
-
-
-
-
-
-    
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
+        <img src="img/Balloon-Border.png" width="100%" class="balao">
+    </div>
 </body>
+<script src="https://unpkg.com/magic-snowflakes/dist/snowflakes.min.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/typed.min.js"></script>
+<script src="js/script.js"></script>
+
 </html>
